@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <section
+        class="max-w-[100%] flex flex-row flex-wrap justify-around items-center shadow-pink-700 shadow-md"
+      >
+        <!-- Logo of myntra -->
+        <div class="p-2 flex items-center gap-3">
+          <!-- Menu Logo -->
+          <div class="hidden max-[1167px]:block max-[400px]:hidden text-2xl">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <a href="./index.html">
+            <img src="./Images/myntra_logo.webp" alt="Logo" class="w-[80px]" />
+          </a>
+        </div>
+
+        <!-- content regarding website -->
+        <div class="p-2 max-[1167px]:hidden">
+          <ul class="flex font-semibold gap-5">
+            <li><a href="#">MEN</a></li>
+            <li><a href="#">WOMEN</a></li>
+            <li><a href="#">KIDS</a></li>
+            <li><a href="#">HOME&LIVING</a></li>
+            <li><a href="#">BEAUTY</a></li>
+            <li>
+              <a href="#">STUDIO<sup class="text-pink-600">NEW</sup></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- search bar of myntra -->
+        <div
+          class="border rounded-md relative flex items-center max-[650px]:hidden"
+        >
+          <i
+            class="fa-solid fa-magnifying-glass absolute left-1 text-[1.3rem] text-gray-500"
+          ></i>
+          <input
+            class="w-[320px] px-8 py-2 bg-gray-100"
+            type="text"
+            name=""
+            id=""
+            placeholder="Search for product brand and more"
+          />
+        </div>
+
+        <!-- profile wishlist Bag/Cart -->
+        <div class="flex gap-5 p-2">
+          <!-- responsive menu -->
+          <div class="hidden max-[400px]:block">
+            <div class="flex flex-col items-center gap-1">
+              <i class="fa-solid fa-bars"></i>
+              <span>Menu</span>
+            </div>
+          </div>
+
+          <!-- responsive search -->
+          <div class="hidden max-[650px]:block">
+            <div class="flex flex-col items-center gap-1 cursor-pointer m">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span>Search</span>
+            </div>
+          </div>
+
+          <!-- profile -->
+          <div
+            class="flex flex-col items-center gap-1 cursor-pointer hover:text-green-700"
+          >
+            <i class="fa-regular fa-user"></i>
+            <span>Profile</span>
+          </div>
+          <!-- wishlist -->
+          <div
+            class="flex flex-col items-center gap-1 cursor-pointer hover:text-red-700"
+          >
+            <i class="fa-regular fa-heart"></i>
+            <span>Wishlist</span>
+          </div>
+          <!-- cart or bag -->
+          <a
+            id="bag-cart"
+            onclick="displayAddProduct()"
+            class="flex flex-col items-center gap-1 cursor-pointer hover:text-blue-700"
+          >
+            <i class="fa-solid fa-cart-shopping"><sup id="bag-count">0</sup></i>
+            <span>Bag</span>
+          </a>
+        </div>
+      </section>
+    </nav>
+
+    <!-- Bag HTML -->
+    <main>
+      <!-- container  -->
+      <div class="max-w-[90%]  flex max-[1130px]:flex-wrap-reverse justify-center gap-10  p-4 mx-auto my-10">
+        <!-- Products in bag -->
+        <div
+          class="grid grid-cols-2  w-[70%] max-[1130px]:w-[100%]"
+          id="bag-container"
+        >
+          <!--  product -->
+        </div>
+        <!-- Bill of products -->
+        <div class="w-[30%] max-[1130px]:w-[auto]  p-2">
+          <div class="flex flex-col gap-2 py-5 px-2 border " id="bill-generator">
+            
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <div class="border-b-4 border-t-4 my-5">
+      <section class="max-w-[1300px] mx-auto p-2">
+        <div class="flex flex-row p-4 justify-around">
+          <!-- column one -->
+          <div class="flex flex-col gap-5">
+            <h4>ONLINE SHOPPING</h4>
+            <ul class="text-gray-500">
+              <li>Men</li>
+              <li>Women</li>
+              <li>Kids</li>
+              <li>Home & Living</li>
+              <li>Beauty</li>
+              <li>Gift Card</li>
+              <li>Myntra Insider</li>
+            </ul>
+          </div>
+          <!-- column two -->
+          <div class="flex flex-col gap-5">
+            <h4>ONLINE SHOPPING</h4>
+            <ul class="text-gray-500">
+              <li>Men</li>
+              <li>Women</li>
+              <li>Kids</li>
+              <li>Home & Living</li>
+              <li>Beauty</li>
+              <li>Gift Card</li>
+              <li>Myntra Insider</li>
+            </ul>
+          </div>
+          <!-- column three -->
+          <div class="flex flex-col gap-5">
+            <h4>ONLINE SHOPPING</h4>
+            <ul class="text-gray-500">
+              <li>Men</li>
+              <li>Women</li>
+              <li>Kids</li>
+              <li>Home & Living</li>
+              <li>Beauty</li>
+              <li>Gift Card</li>
+              <li>Myntra Insider</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="./myntra.js"></script>
+    <script src="./bag.js"></script>
+  </body>
+</html>
